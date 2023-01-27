@@ -4,6 +4,7 @@
     // define variables
     var items = document.querySelectorAll(".timeline li");
     var items1 = document.querySelectorAll(".luncher-timeline li");
+    var items2 = document.querySelectorAll(".rocket");
   
     // check if an element is in viewport
     // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
@@ -25,7 +26,16 @@
         }
       }
     }
+    function callbackFunc2() {
+      for (var i = 0; i < items2.length; i++) {
+        if (isElementInViewport(items2[i])) {
+          items2[i].classList.add("active");
+        }
+      }
+    }
     function callbackFunc1() {
+       
+
       for (var i = 0; i < items1.length; i++) {
         if (isElementInViewport(items1[i])) {
           items1[i].classList.add("in-view");
@@ -34,6 +44,7 @@
     }
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
+
       
         for (var i = 0; i < reveals.length; i++) {
           var windowHeight = window.innerHeight;
@@ -46,6 +57,7 @@
             reveals[i].classList.remove("active");
           }
         }
+
       }
   
     // listen for events
@@ -55,6 +67,7 @@
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
+    window.addEventListener("scroll", callbackFunc2);
     window.addEventListener("scroll", reveal);
   })();
   
