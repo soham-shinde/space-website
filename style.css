@@ -680,4 +680,7 @@ body {
     .statelite{
         transform: translate(0,50rem);
     }
+    .header-quote p {
+    margin-top: 4rem;
+    }
 }
