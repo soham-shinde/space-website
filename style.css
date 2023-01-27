@@ -11,10 +11,12 @@ body {
 
 .nav {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: end;
     align-items: center;
     height: 6rem;
+    top: 1rem;
 }
 
 .nav ul {
@@ -317,12 +319,7 @@ body {
         border-color: transparent transparent transparent;
     }
     
-#background-video {
-    width: 00%;
-    height: 600vh;
-    left: calc(-100%);
-    top: 70%;
-}
+
 
 }
 
@@ -539,11 +536,6 @@ body {
     border-color: transparent transparent transparent;
 }
 
-
-
-/* EFFECTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .luncher-timeline ul li::after {
     transition: background 0.5s ease-in-out;
     TOP: 50%;
@@ -654,10 +646,37 @@ body {
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
     .astrocat-img{
-        height: 500vh;
-        top: calc(100% - 100vh);
-        right: -20%;
+        height: 45rem;
+        top: calc(100% - 45rem);
+        left: 70%;
+    }
+    .mission-section{
+        width: 1500vw;
+    }
+    .content{
+        left: -600px;
+    }
+    #background-video {
+        width: 70rem;
+        height: 80rem;
+        left: calc(-100%);
+        top: 70%;
+    }
+    .nav ul{
+        right: -6rem;
+    }
+    .header{
+        top:5rem;
+    }
+    .header-quote{
+        top: 5rem;
+    }
+    .rocket{
+        right: -30rem;
+    }
+    .statelite{
+        transform: translate(0,50rem);
     }
 }
