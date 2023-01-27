@@ -653,3 +653,11 @@ body {
         transform: translate(0,100%) rotate(0deg);
     }
 }
+
+@media screen and (max-width: 500px){
+    .astrocat-img{
+        height: 500vh;
+        top: calc(100% - 500vh);
+        right: -20%;
+    }
+}
