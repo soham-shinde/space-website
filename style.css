@@ -607,8 +607,13 @@ body {
     z-index: 1;
     transform: translateY(50%) rotate(27deg);
     margin: none;
-    animation: floating1 5s ease-in-out  normal forwards;
     width: 10rem;
+    opacity: 0;
+}
+.rocket.active{
+    opacity: 1;
+    animation: floating1 5s ease-in-out  normal forwards;
+
 }
 
 .rocket img {
@@ -632,11 +637,11 @@ body {
 }
 @keyframes floating1 {
     0% {
-        transform: translate(-100%,100%) rotate(30deg);
+        transform: translate(0,110%) rotate(10deg);
     }
  
     100% {
-        transform: translate(50%,-50%) rotate(30deg);
+        transform: translate(0,-10%) rotate(10deg);
     }
 }
 
