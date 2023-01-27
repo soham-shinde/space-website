@@ -574,7 +574,6 @@ body {
 
 .rocket-card img {
     width: 10rem;
-    height: 20rem;
 }
 
 .rocket-card {
@@ -607,17 +606,15 @@ body {
     right: 10%;
     z-index: 1;
     transform: translateY(50%) rotate(27deg);
-    margin: 5rem;
-
+    margin: none;
     animation: floating1 5s ease-in-out  normal forwards;
-
-
+    width: 10rem;
 }
 
 .rocket img {
     left: 0;
-    width: 20rem;
-    filter: drop-shadow(2px 2px 100px rgb(90, 75, 188));
+    width: 10rem;
+    filter: drop-shadow(2px 2px 100px rgb(34, 0, 255));
 }
 .astrocat-img{
     background-image: url("images/astrocat-min.png");
@@ -639,7 +636,7 @@ body {
     }
  
     100% {
-        transform: translate(100%,-50%) rotate(30deg);
+        transform: translate(50%,-50%) rotate(30deg);
     }
 }
 
