@@ -28,9 +28,16 @@
     }
     function callbackFunc2() {
       for (var i = 0; i < items2.length; i++) {
-        if (isElementInViewport(items2[i])) {
-          items2[i].classList.add("active");
-        }
+          var windowHeight = window.innerHeight;
+          var elementTop = items2[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            items2[i].classList.add("active");
+          } else {
+            items2[i].classList.remove("active");
+          }
+       
       }
     }
     function callbackFunc1() {
