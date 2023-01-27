@@ -1,11 +1,21 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #050E1D;
     color: #fff;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-width:1000px;        /* Suppose you want minimum width of 1000px */
-   width: auto !important;  /* Firefox will set width as auto */
+    min-width:1000px;        
+   width: auto !important;  
    width:1000px;     
 }
 
@@ -118,16 +128,6 @@ body {
     margin: 4rem;
     display: block;
 }
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 
 .timeline-section {
     margin-top: 15rem !important;
@@ -377,15 +377,15 @@ body {
 
 @keyframes floating2 {
     0% {
-        transform: translate(0 ,150%) rotate(-10deg);
+        transform: translate(0 ,0%) rotate(-10deg);
     }
 
     50% {
-        transform: translate(0, 0) rotate(-10deg);
+        transform: translate(0, 50%) rotate(-10deg);
     }
 
     100% {
-        transform: translate(0, 150%) rotate(-10deg);
+        transform: translate(0, 0%) rotate(-10deg);
     }
 }
 
@@ -483,7 +483,7 @@ body {
     position: relative;
     width:3px;
     margin: 0 auto;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), #5a11d0,rgba(255, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), hwb(126 49% 3%),rgba(255, 0, 0, 0));
 }
 
 .luncher-timeline ul li::after {
@@ -548,8 +548,8 @@ body {
 
 }
 .luncher-timeline ul li:nth-child(even).in-view::after {
-    background: #5a11d0;
-    box-shadow: 1px 1px 50px 1rem #5a11d0;
+    background: hwb(126 49% 3%);
+    box-shadow: 1px 1px 50px 1rem hwb(126 49% 3%);
 }
 
 .rocket-card{
@@ -609,7 +609,7 @@ body {
     transform: translateY(50%) rotate(27deg);
     margin: 5rem;
 
-    animation: floating1 5s ease-in-out infinite;
+    animation: floating1 5s ease-in-out  normal forwards;
 
 
 }
@@ -635,14 +635,11 @@ body {
 }
 @keyframes floating1 {
     0% {
-        transform: translate(0,100%) rotate(0deg);
+        transform: translate(-100%,100%) rotate(30deg);
     }
-
-    50%{
-        transform: translate(0,0%);
-    }
+ 
     100% {
-        transform: translate(0,100%) rotate(0deg);
+        transform: translate(100%,-50%) rotate(30deg);
     }
 }
 
