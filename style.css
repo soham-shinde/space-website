@@ -661,7 +661,7 @@ body {
     #background-video {
         width: 80rem;
         height: 80rem;
-        left: calc(-20rem);
+        left: calc(-30rem);
         top: 70%;
     }
     .nav ul{
