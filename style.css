@@ -657,7 +657,7 @@ body {
 @media screen and (max-width: 400px){
     .astrocat-img{
         height: 500vh;
-        top: calc(100% - 500vh);
+        top: calc(100% - 400vh);
         right: -20%;
     }
 }
