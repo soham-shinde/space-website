@@ -79,12 +79,10 @@ body {
 
 .header-title h1 {
     font-size: 3.5rem;
-    text-shadow: 4px 3px 12px #005eff;
 }
 
 .header-title h2 {
     font-size: 2.5rem;
-    text-shadow: 4px 3px 12px #005eff;
 
 }
 
@@ -137,9 +135,9 @@ body {
 
 
 .timeline-container {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto auto 8rem;
     text-align: center;
     font-size: 2rem;
     color: hwb(0 100% 0%);
@@ -165,7 +163,7 @@ body {
     margin: 0 auto;
     left: 10rem;
     padding-top: 50px;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), hwb(287 49% 3%));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), hwb(0 100% 0%));
 }
 
 
@@ -177,7 +175,6 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-
     justify-content: center;
     padding: 1rem;
     box-shadow: 0px 0px 0px 6px rgba(255, 255, 255/40%);
@@ -185,11 +182,12 @@ body {
     border-radius: 10px;
     color: rgb(255, 255, 255);
     margin: 0 20px 0 20px;
+    border: 1px solid #ffffffa1;
 }
 
 .content p {
     font-size: 1rem;
-    color: #DBDBDB;
+    color: #ffffff;
 }
 
 .content::before {
@@ -267,7 +265,7 @@ body {
 }
 
 .timeline ul li.in-view::after {
-    background: #dd7df7;
+    background: #ffffff;
     box-shadow: 0px 0px 50px 10px #fff;
     left: -8px;
 }
@@ -405,7 +403,7 @@ body {
 }
 
 .card {
-    color: #c9c9c9;
+    color: #ffffff;
     margin: 1rem auto;
     align-items: center;
     display: flex;
@@ -417,6 +415,7 @@ body {
     padding-bottom: 20px;
     font-size: 0.6rem;
     font-weight: 100;
+    border: 1px solid #ffffff63;
 }
 
 .card img {
@@ -476,14 +475,14 @@ body {
     position: relative;
     width:3px;
     margin: 0 auto;
-    background: linear-gradient(to top, rgba(255, 0, 0, 0), #603bb3,rgba(255, 0, 0, 0));
+    background: linear-gradient(to top, rgba(255, 0, 0, 0), #ffffff,rgba(255, 0, 0, 0));
 }
 .luncher-timeline ul li:nth-child(even) {
     list-style-type: none;
     position: relative;
     width:3px;
     margin: 0 auto;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), hwb(126 49% 3%),rgba(255, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), hwb(0 100% 0%),rgba(255, 0, 0, 0));
 }
 
 .luncher-timeline ul li::after {
@@ -543,13 +542,13 @@ body {
 }
 
 .luncher-timeline ul li.in-view::after {
-    background: #603bb3 ;
-    box-shadow: 1px 1px 50px 1rem #603bb3;
+    background: #ffffff ;
+    box-shadow: 1px 1px 50px 1rem #ffffff;
 
 }
 .luncher-timeline ul li:nth-child(even).in-view::after {
-    background: hwb(126 49% 3%);
-    box-shadow: 1px 1px 50px 1rem hwb(126 49% 3%);
+    background: hwb(0 100% 0%);
+    box-shadow: 1px 1px 50px 1rem hwb(0 100% 0%);
 }
 
 .rocket-card{
@@ -573,25 +572,32 @@ body {
 }
 
 .rocket-card img {
-    width: 10rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin: 1rem;
 }
 
 .rocket-card {
     border: 1px solid rgba(255, 255, 255, 0.395);
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 20px;
-    height: 360px;
-    padding: 1.5rem;
+    height: 15rem;
+    width: 15rem;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     justify-items: center;
     align-items: center;
     justify-content: center;
     overflow: visible;
-    color: #db2e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+
+
 }
 
 .rocket-card:hover{
@@ -682,4 +688,18 @@ body {
     .header-quote p {
     margin-top: 4rem;
     }
+    .footer{
+    width: 1500vw;
+
+    }
 }
+.footer {
+    display: flex;
+    /* background-color: #333333; */
+    background-color: #050e1d;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    border-top: 1px solid #a8a8a8;
+    justify-content: center ;
+  }
